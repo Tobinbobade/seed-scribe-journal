@@ -47,6 +47,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        journal: {
+          header: "hsl(var(--journal-header))",
+          "header-foreground": "hsl(var(--journal-header-foreground))",
+          footer: "hsl(var(--journal-footer))",
+          "footer-foreground": "hsl(var(--journal-footer-foreground))",
+          link: "hsl(var(--journal-link))",
+          "link-hover": "hsl(var(--journal-link-hover))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +70,10 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        serif: ['Georgia', 'Times New Roman', 'serif'],
+        sans: ['system-ui', '-apple-system', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {
