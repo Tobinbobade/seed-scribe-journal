@@ -21,7 +21,7 @@ export interface Volume {
 export interface EditorialMember {
   name: string;
   role: string;
-  affiliation?: string;
+  affiliation: string;
 }
 
 // Sample articles data
@@ -70,7 +70,7 @@ export const volumes: Volume[] = [
     issues: [
       {
         number: 1,
-        articles: [] // Placeholder for future issue
+        articles: []
       }
     ]
   }
@@ -81,41 +81,53 @@ export const editorialBoard: EditorialMember[] = [
   {
     name: "Prof. A. B. Adewale",
     role: "Editor-in-Chief",
-    affiliation: "University of Ibadan, Nigeria"
+    affiliation: "Department of Crop Science, University of Ibadan, Nigeria"
   },
   {
     name: "Dr. C. D. Okafor",
     role: "Associate Editor",
-    affiliation: "Ahmadu Bello University, Zaria"
+    affiliation: "Institute for Agricultural Research, Ahmadu Bello University, Zaria"
   },
   {
     name: "Dr. E. F. Bello",
     role: "Managing Editor",
-    affiliation: "Federal University of Agriculture, Abeokuta"
+    affiliation: "Department of Plant Science, Federal University of Agriculture, Abeokuta"
   },
   {
-    name: "Dr. G. H. Musa",
+    name: "Prof. G. H. Musa",
     role: "Editorial Board Member",
-    affiliation: "Bayero University, Kano"
+    affiliation: "Department of Agronomy, Bayero University, Kano"
   },
   {
     name: "Prof. I. J. Ogun",
     role: "Editorial Board Member",
-    affiliation: "University of Nigeria, Nsukka"
+    affiliation: "Department of Crop Science, University of Nigeria, Nsukka"
   },
   {
     name: "Dr. K. L. Adebayo",
     role: "Editorial Board Member",
-    affiliation: "Obafemi Awolowo University, Ile-Ife"
+    affiliation: "Department of Crop Production, Obafemi Awolowo University, Ile-Ife"
+  },
+  {
+    name: "Dr. M. N. Ibrahim",
+    role: "Editorial Board Member",
+    affiliation: "National Agricultural Seeds Council, Abuja"
+  },
+  {
+    name: "Prof. O. P. Yakubu",
+    role: "Editorial Board Member",
+    affiliation: "Department of Plant Breeding, University of Ilorin"
   }
 ];
 
 // Journal information
 export const journalInfo = {
   title: "ASSN Journal of Seed Science and Technology",
-  shortTitle: "ASSN Journal",
+  shortTitle: "ASSN J. Seed Sci. Technol.",
+  subtitle: "An Official Publication of the Association of Seed Scientists of Nigeria",
   publisher: "Association of Seed Scientists of Nigeria (ASSN)",
-  issn: "XXXX-XXXX", // Placeholder
+  issnPrint: "XXXX-XXXX",
+  issnOnline: "XXXX-XXXX",
   email: "journal@assnigeria.org",
   address: "Association of Seed Scientists of Nigeria (ASSN), National Secretariat, Abuja, Nigeria"
 };
