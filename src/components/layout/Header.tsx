@@ -21,22 +21,38 @@ export function Header() {
 
   return (
     <header className="bg-background border-b border-border">
-      {/* Journal Identity Section */}
+      {/* Journal Identity Section with Banner */}
       <div className="bg-journal-header text-journal-header-foreground">
         <div className="container mx-auto px-4 py-6 md:py-8">
-          <Link to="/" className="block">
-            <h1 className="text-2xl md:text-3xl font-serif font-bold tracking-tight leading-tight">
-              {journalInfo.title}
-            </h1>
-            <p className="text-sm md:text-base opacity-90 mt-2 font-normal">
-              {journalInfo.subtitle}
-            </p>
-          </Link>
-          
-          {/* ISSN Information */}
-          <div className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-xs md:text-sm opacity-80">
-            <span>ISSN (Print): {journalInfo.issnPrint}</span>
-            <span>ISSN (Online): {journalInfo.issnOnline}</span>
+          <div className="flex flex-col md:flex-row md:items-center gap-6">
+            {/* Journal Cover Image */}
+            <div className="flex-shrink-0">
+              <div className="w-24 h-32 md:w-28 md:h-36 bg-white/10 border border-white/20 rounded shadow-lg flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Journal Cover" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            
+            {/* Journal Title & Info */}
+            <div className="flex-1">
+              <Link to="/" className="block">
+                <h1 className="text-2xl md:text-3xl font-serif font-bold tracking-tight leading-tight">
+                  {journalInfo.title}
+                </h1>
+                <p className="text-sm md:text-base opacity-90 mt-2 font-normal">
+                  {journalInfo.subtitle}
+                </p>
+              </Link>
+              
+              {/* ISSN Information */}
+              <div className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-xs md:text-sm opacity-80">
+                <span>ISSN (Print): {journalInfo.issnPrint}</span>
+                <span>ISSN (Online): {journalInfo.issnOnline}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
